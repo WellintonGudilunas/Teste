@@ -1,0 +1,57 @@
+	
+	PHP Operadores de comparação
+	==  $x == $y 	Retorna verdadeiro se $x for igual a $y;
+
+	=== Identico	$x === $y Retorna verdadeiro se $x for igual a $y e o tipo for igual também
+		
+	!= 	Não igual    $x != $y 	Retorna verdadeiro se $x for diferente de $y 
+	<> 	Não igual    $x <> $y 	etorna verdadeiro se $x for diferente de $y 
+
+	!== 	Não é identico	$x !== $y retorna verdadeiro se $x não forem iguals $y, ou se não forem do mesmo tipo.
+
+	 <=> 	Spaceship 	$x <=> $y retorna um inteiro menor que, igual a, ou maior que zero, dependendo se $x for menor ou igual ou maior que $y.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+	PHP Increment / Decrement Operators
+
+	++$x 	Pré incremento	Incrementa $x  em um, então retorna $x 	
+	$x++ 	Pós incremento 	Retorna $x, então incrementa $x em um 	
+	--$x 	Pré decremento 	Decrementa $x em um, então returna $x 	
+	$x-- 	Pós decremento 	Returna $x, então decrementa $x em um
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	PHP Logical Operators
+	
+	Operator  and, or, xor, && - and, || - or, !.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	PHP String Operators
+
+	. - concatenação 
+	exemplo: $txt. $txt2 // retorna $txt e $txt2 concatenados
+	
+	.= - Atribuição de concatenação
+	exemplo: $txt1 .= $txt2 // anexa  $txt2 a $txt1
+************************************************************************************
+	PHP if e else 
+	 <?php
+		$t = date("H");
+
+		if ($t < "20") {
+		  echo "Have a good day!";
+		} else {
+ 		 echo "Have a good night!";
+		}
+	?> 
+
+	 <?php
+		$t = date("H");
+
+		if ($t < "10") {
+		  echo "Have a good morning!";
+		} elseif ($t < "20") {
+		  echo "Have a good day!";
+		} else {
+		  echo "Have a good night!";
+		}
+	?> 
+	
